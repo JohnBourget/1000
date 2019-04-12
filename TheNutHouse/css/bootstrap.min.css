@@ -29,7 +29,25 @@ section,
 summary {
     display: block
 }
-
+.blur{
+    -webkit-filter: blur(4px); 
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    transition: all .25s ease;
+    filter: blur(4px);
+}
+.blur:hover{
+    -webkit-filter: blur(0px); 
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    transition: all .25s ease;
+    transition: 0.3;
+    filter: blur(0px);
+}
 audio,
 canvas,
 progress,
@@ -1406,7 +1424,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #b00532;
+    color: #a94442;
     background-color: #fff
 }
 
@@ -1551,7 +1569,7 @@ h6 .small,
 h6 small {
     font-weight: 400;
     line-height: 1;
-    color: #777
+    color: #f5f5f5
 }
 
 .h1,
@@ -5622,11 +5640,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default .navbar-text {
-    color: #777
+    color: #999
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #777
+    color: #999
 }
 
 .navbar-default .navbar-nav > li > a:focus,
